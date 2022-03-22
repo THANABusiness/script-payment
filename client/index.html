@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Charging for certification and testing</title>
+    <meta name="description" content="A demo of Stripe Payment Intents" />
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="/normalize.css" />
+    <link rel="stylesheet" href="/global.css" />
+    <!-- Load Stripe.js on your website. -->
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="./script.js" defer></script>
+  </head>
+
+  <body>
+    <div class="togethere-background"></div>
+    <div class="sr-root">
+      <div class="sr-main">
+        <div class="receipt" style="margin-top: 40px;">
+          <div style="border-bottom: solid 1px #888;">
+            <h3>Make Payment</h3>
+          </div>
+
+          <div style="margin-top: 50px; border-bottom: solid 1px #eee;">
+            <h5>Total</h5>
+            <h2>$1400.00 SGD</h2>
+          </div>
+
+          <div style="float: right;">
+            <button id="tier-one-btn">Complete Payment</button>
+          </div>
+
+          <div class="price-table-container">
+            <section>
+              <img src="/img/starter.png" width="120" height="120" />
+              <div class="name">
+                <b>Certification</b><br />
+                For XYZ Services and certification letter
+              </div>
+              <div class="price">$1248.00</div>
+            </section>
+
+            <section>
+              <img src="/img/professional.png" width="120" height="120" />
+              <div class="name">
+                <b>Testing</b><br />
+                For testing after certification
+              </div>
+              <div class="price">$152.00</div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="error-message" class="error-message"></div>
+  </body>
+</html>
